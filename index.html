@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashutosh Patel Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      body {
+  background-color: #06364d;  /* yellow */
+  color: #c8b5b5;
+}
+
+      /* About Section */
+      .about-mf .box-shadow-full { padding-top: 4rem; padding-bottom: 4rem; }
+      .about-mf .about-img { margin-bottom: 2rem; }
+      .about-mf .about-img img { margin-left: 10px; }
+
+      /* Skills Progress */
+      .skill-mf .progress { margin: .5rem 0 1.2rem 0; border-radius: 0; height: .7rem; }
+      .skill-mf .progress .progress-bar { height: .7rem; background-color: #ffbd39; }
+
+      /* Typing Animation */
+      #typing-animation { font-size: 30px; font-weight: bold; color: #c1ff7a; white-space: nowrap; overflow: hidden; animation: typing 3s steps(20,end) infinite; }
+      #typing-animation:before { content:""; width: 0; height: 100%; background-color: #ef1818; animation: typing-cursor 0.5s ease-in-out infinite; }
+      @keyframes typing { from {width:0;} to {width:100%;} }
+      @keyframes typing-cursor { from {width:5px;} to {width:0;} }
+
+      /* Project Zoom */
+      .zoom-effect { overflow: hidden; transition: transform 0.3s ease-out; }
+      .zoom-effect:hover { transform: scale(1.1); }
+      
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ashutosh Patel</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	</nav>
+
+    <!-- Home Section -->
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Welcome to My Portfolio</span>
+                  <h1 style="font-size: xx-large;">Hi, I'm </h1>
+                  <h1 class="mb-4 mt-3"><span>Ashutosh <br> Patel 👋</span></h1>
+
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = ['MCA Student', 'Aspiring Software Developer', 'Full-Stack Developer', 'Cyber Security Learner'];
+                    function playTypingAnimation(text) {
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i*150);
+                      }
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text)+1)%typingTexts.length]);
+                      }, text.length*200);
+                    }
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
+
+                  <br><br>
+                  <h2>Aspiring Software Developer</h2>
+                  <p><a href="#" class="btn btn-primary py-3 px-4">Research Paper</a> 
+                     <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My Project</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row d-flex align-items-stretch">
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Not found">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Ashutosh Patel</span></p>
+                      <p><span class="title-s">Job Role: </span> <span>Aspiring Full-Stack Developer</span></p>
+                      <p><span class="title-s">Experience: </span> <span>Internship at Octanet Pvt Ltd</span></p>
+                      <p><span class="title-s">Address: </span> <span>Azamgarh, India</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-mf">
+                  <p class="title-s">Skills</p>
+                  <span>SQL</span> <span class="pull-right">95%</span>
+                  <div class="progress"><div class="progress-bar" style="width:95%;"></div></div>
+
+                  <span>C, C++</span> <span class="pull-right">85%</span>
+                  <div class="progress"><div class="progress-bar" style="width:85%;"></div></div>
+
+                  <span>HTML, CSS, JS</span> <span class="pull-right">90%</span>
+                  <div class="progress"><div class="progress-bar" style="width:90%;"></div></div>
+
+                  <span>Java</span> <span class="pull-right">85%</span>
+                  <div class="progress"><div class="progress-bar" style="width:85%;"></div></div>
+
+                  <span>C#</span> <span class="pull-right">80%</span>
+                  <div class="progress"><div class="progress-bar" style="width:80%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+                <p>MCA student interested in Full-Stack Development and Cyber Security. Completed Blood Donation Management System project, authored a research paper, and gained internship experience at Octanet Pvt Ltd. Attended Cyber Security Boot Camp by NIELIT (MeitY, Govt. of India).</p>
+                <ul class="about-info mt-4 px-md-0 px-2">
+                  <li class="d-flex"><span>Profile:</span> <span>Full-Stack Development & Cyber Security</span></li>
+                  <li class="d-flex"><span>Domain:</span> <span>Web Applications, Healthcare Systems & Software Development</span></li>
+                  <li class="d-flex"><span>Education:</span> <span>MCA — Pursuing</span></li>
+                  <li class="d-flex"><span>Languages:</span> <span>English, Hindi</span></li>
+                  <li class="d-flex"><span>Programming Skills:</span> <span>C, Java, HTML, CSS, JavaScript, SQL</span></li>
+                  <li class="d-flex"><span>Tools & Technologies:</span> <span>Git, MySQL, VS Code</span></li>
+                  <li class="d-flex"><span>Training & Certification:</span> <span>Cyber Security Boot Camp (Bug Bounty) — NIELIT, MeitY</span></li>
+                  <li class="d-flex"><span>Interests:</span> <span>Software Development, Cyber Security, Problem Solving</span></li>
+                  <li class="d-flex"><span>Internship:</span> <span>Octanet Pvt Ltd</span></li>
+                  <li class="d-flex"><span>Project:</span> <span>Blood Donation Management System</span></li>
+                  <li class="d-flex"><span>Research Paper:</span> <span>Authored Research Paper on Blood Donation System</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>MCA student with strong skills in Full-Stack Web Development and Cyber Security. Completed internship at Octanet Pvt Ltd, worked on web applications, software development, and cyber security projects. Passionate about building scalable applications and learning new technologies.</p>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2025-Present</span>
+              <h2>Full-Stack Development Intern</h2>
+              <span class="position">Octanet Pvt Ltd</span>
+              <ul>
+                <li>Developed web applications using HTML, CSS, JavaScript, and Java backend technologies.</li>
+                <li>Worked on database design and SQL queries for project data management.</li>
+                <li>Implemented basic cyber security measures and bug fixes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2025-Present</span>
+              <h2>Master of Computer Applications (MCA)</h2>
+              <span class="position">XYZ University</span>
+              <p>Currently pursuing MCA with focus on Full-Stack Development & Cyber Security.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2018-2021</span>
+              <h2>Bachelor of Engineering</h2>
+              <span class="position">Visvesvaraya Technological University</span>
+              <p>Graduated with First Class Distinction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Here are some of my Full-Stack and Cyber Security related projects.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/ashutoshpatel/BloodDonationManagement" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/ashutoshpatel/BloodDonationManagement">Blood Donation Management System</a></h3>
+                <p>Full-stack web app to manage blood donors, recipients, and donation events. Backend in Java, frontend in HTML/CSS/JS, database integration with SQL.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="#">Cyber Security Boot Camp Projects</a></h3>
+                <p>Completed exercises from NIELIT Cyber Security Boot Camp (Bug Bounty), focusing on vulnerability detection and ethical hacking practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="https://github.com/ashutoshpatel9211" class="btn btn-primary py-3 px-5">See More on GitHub</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
